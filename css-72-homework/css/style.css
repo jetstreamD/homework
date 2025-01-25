@@ -68,7 +68,7 @@ body {
 
 
 .chest:active {
-    animation: openChest .5s ease forwards;
+    animation: openChest 1.1s ease forwards;
 }
 
 @keyframes openChest {
