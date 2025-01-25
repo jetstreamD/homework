@@ -1,0 +1,58 @@
+body {
+    font-family: "VT323";
+    background-color: #080808;
+    color: #fff;
+    font-size: 8rem;
+    padding-top: 45vh;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    position: relative;
+    text-align: center;
+}
+
+
+/* 　　　　／＞　 フ
+　　　　　| 　_　 _|
+　 　　　／`ミ _x 彡
+　　 　 /　　　 　 |
+　　　 /　 ヽ　　 ﾉ
+　／￣|　　 |　|　|
+　| (￣ヽ＿_ヽ_)_)
+　＼二つ               */
+
+
+
+.title::before,
+.title::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+}
+
+h1 {
+    background: linear-gradient(90deg,#e55603 1%, #FFF57B 25%, #FCB033 40%, #10367e 55%, #171616 110%, #f2f5fc 130%);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.title::before {
+    right: 120%;
+    background: linear-gradient(#FFF57B, #FCB033 80%);
+    box-shadow: 0 0 80px #e55603;
+}
+
+.title::after {
+    left: 120%;
+    background: linear-gradient(#eae7e7, #c0bfbf 80%);
+    box-shadow: 0 0 80px #f2f5fc;
+}
+
