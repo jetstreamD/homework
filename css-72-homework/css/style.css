@@ -67,7 +67,7 @@ body {
 }
 
 .chest:hover {
-    animation: openChest 3s forwards;
+    animation: openChest 3.5s forwards;
 }
 
 @keyframes openChest {
