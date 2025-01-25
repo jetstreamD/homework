@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "VT323";
+    src:
+        local('VT323 Regular'),
+        local('VT323-Regular'),
+        url('../fonts/VT323-Regular.woff2') format('woff2'),
+        url('../fonts/VT323-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
