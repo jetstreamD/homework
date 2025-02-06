@@ -1,0 +1,74 @@
+body {
+    font-family: "VT323";
+    font-size: 2.5rem;
+    background-image: url(/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 50;
+    transform: translate(-50%, -50%);
+
+    width: 35vw;
+    min-height: 50vh;
+    background: #c99157;
+    border: .3rem solid #0a0a0a;
+    border-radius: 10px;
+
+    transition: opacity 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.open-btn {
+    transform: translate(100%, 150%);
+    font-size: 4rem;
+    border-radius: 150px;
+    width: 10vw;
+    min-width: 10vw;
+    
+    border: 2px solid ;
+    background: #0a0a0a;
+    color: #fff;
+}
+
+.blackout {
+    position: fixed;
+    background: rgb(19, 18, 14, 0.6);
+    inset: 0;
+    z-index: 20;
+    visibility: hidden;
+}
+
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 15px 20px;
+}
+
+.modal__title {
+    font-size: 4rem;
+    font-weight: 500;
+    border-top: 1rem solid #0a0a0a;
+    border-bottom: 1rem solid #0a0a0a;
+    border-style: double;
+}
+
+.modal__header .close-btn {
+    cursor: pointer;
+    background: none;
+    outline: none;
+    background: none;
+}
+
+.modal__text {
+    text-align: start;
+    padding: 15px 15px;
+    line-height: 125%;
+}
