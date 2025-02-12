@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <div class="wrapper">
         <header class="header">
             <div class="container">
@@ -84,7 +84,61 @@
                 </div>
             </section>
         </header>
-        <main></main>
+        <main>
+            <section class="main__about about">
+                <div class="container">
+                    <div class="about__inner">
+                        <div class="about__img">
+                            <img src="imgs/general/confectioner.jpg" alt="Кондитер с тортом">
+                            <div class="about__img-control">
+                                <a class="about__img-btn" href="#">
+                                    <img src="imgs/icons/gift.svg" alt="плей">
+                                </a>
+                                <p class="about__img-text">Нажми на подарок, чтобы получить наш фирменный рецепт</p>
+                            </div>
+                        </div>
+                        <div class="about__descr">
+                            <div class="about__heading">
+                                <h2 class="about__title">
+                                    Наша школа —
+                                </h2>
+                                <span class="about__title-text">это уютный дом для начинающих кондитеров</span>
+                            </div>
+                            <p class="about__text">
+                                С нами ты погрузишься в удивительный мир кондитерского искусства, получишь новые
+                                знания
+                                и профессиональные навыки! Обретёшь веру в свои силы, научишься приготовлению
+                                разнообразных современных и классических десертов
+                            </p>
+                        </div>
+                        <div class="about__advantage1 advantage">
+                            <div class="about__advantage-img">
+                                <img src="imgs/icons/chefs-hat-2.svg" alt="">
+                            </div>
+                            <p>Живое общение с наставниками и одногруппниками</p>
+                        </div>
+                        <div class="about__advantage2 advantage">
+                            <div class="about__advantage-img">
+                                <img src="imgs/icons/chefs-hat-2.svg" alt="">
+                            </div>
+                            <p>Предоставление всех необходимых материалов</p>
+                        </div>
+                        <div class="about__advantage3 advantage">
+                            <div class="about__advantage-img">
+                                <img src="imgs/icons/chefs-hat-2.svg" alt="">
+                            </div>
+                            <p>Небольшие группы до 6 человек</p>
+                        </div>
+                        <div class="about__advantage4 advantage">
+                            <div class="about__advantage-img">
+                                <img src="imgs/icons/chefs-hat-2.svg" alt="">
+                            </div>
+                            <p>Большие аудитории для обучения</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer class="footer">
             <div class="container">
                 <div class="footer__inner">
@@ -186,6 +240,36 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="modal">
+        <div class="modal__blackout">
+        </div>
+        <div class="modal__window">
+            <div class="modal__cancel">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="11.25" stroke="#E1D9E1" stroke-width="1.5" />
+                    <path
+                        d="M6.75781 17.2433L12.0008 12.0003L17.2438 17.2433M17.2438 6.75732L11.9998 12.0003L6.75781 6.75732"
+                        stroke="#E1D9E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <img class="modal__img" src="imgs/decor/cupcakes-modal.png" alt="">
+            <h3 class="modal__title">
+                Удиви своих близких вкусными капкейками
+            </h3>
+            <p class="modal__text">
+                Оставь свой e-mail, и мы вышлем рецепт на почту
+            </p>
+            <form class="modal__form">
+                <div class="modal__entryarea">
+                    <input class="modal__entryarea-input" type="email" placeholder="E-mail">
+                    <span class="modal__entryarea-label">Введите e-mail</span>
+                </div>
+                <button class="modal__btn btn" type="submit">
+                    Получить подарок
+                </button>
+            </form>
+        </div>
     </div>
     <script src="js/fslightbox.js"></script>
     <script src="js/main.js"></script>
