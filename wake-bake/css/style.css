@@ -1472,6 +1472,10 @@ body {
         margin-bottom: 30px;
     }
 
+    .program__discount {
+        max-width: 84vw;
+    }
+
     /* ////////////////////////////////////////////// */
     .modal__img {
         width: 50%;
