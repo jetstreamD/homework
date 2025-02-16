@@ -69,17 +69,6 @@ accordions.forEach(element => {
         } else {
             accordionContent.style.maxHeight = null
         }
-        /////////////////////////
-        // const accordionContents = document.querySelectorAll('.accordion__content')
-        // accordionContents.forEach(event => {
-        //     if (event.currentTarget !== accordionContent) {
-        //         accordionItem.classList.remove('accordion__item--active')
-        //         accordionContent.style.maxHeight = '0'
-        //     } else {
-        //         accordionItem.classList.add('accordion__item--active')
-        //         accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
-        //     }
-        // })
     })
 })
 

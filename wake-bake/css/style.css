@@ -452,18 +452,16 @@ body {
     display: block;
 }
 
-.accordion {}
+/* .accordion {} */
 
 .accordion__item {
     border: 1px solid var(--accent-color);
     border-radius: 20px;
 }
 
-.accordion__item:first-child {
+.accordion__item:not(#accordion__last-item) {
     margin-bottom: 30px;
 }
-
-
 
 .accordion__control {
     display: flex;
@@ -547,7 +545,7 @@ body {
     margin-bottom: 20px;
 }
 
-.syllabus__list {}
+/* .syllabus__list {} */
 
 .syllabus__item {
     display: flex;
@@ -682,7 +680,7 @@ body {
     width: 501px;
 }
 
-.btn {}
+/* .btn {} */
 
 .program__img {
     grid-column: span 2 / span 2;
@@ -936,6 +934,7 @@ body {
 .modal__entryarea-input:focus {
     padding: 26px 42px 12px 28px;
     color: var(--general-text);
+    border-color: var(--accent-color);
 }
 
 .modal__entryarea-input:focus+span {
@@ -957,11 +956,21 @@ body {
 /* /////////////////////////////////////////////////////////////*/
 
 @media (max-width: 1200px) {
+
+    .hero {
+        padding-bottom: 80px;
+    }
+
     .hero__img-control {
         position: static;
         max-width: none;
         transform: translate(0%, 0%);
         margin-top: 30px;
+    }
+
+    .hero__text {
+        width: 100%;
+        max-width: 100%;
     }
 
     .hero__img {
@@ -1096,10 +1105,6 @@ body {
         height: 4rem;
     }
 
-    .hero {
-        padding: 0px 0 140px;
-    }
-
     /* //////////////////////////////////// */
 
     .program__title {
@@ -1141,6 +1146,7 @@ body {
     .about__inner {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: .5fr .5fr .3fr .3fr .3fr;
+        gap: 25px;
     }
 
     .about__img {
@@ -1156,7 +1162,7 @@ body {
     }
 
     .advantage {
-        margin: 0 0;
+        height: 100px;
     }
 
     .about__advantage1 {
@@ -1223,7 +1229,7 @@ body {
     }
 
     .advantage {
-        margin: auto;
+        margin: -4.5px auto;
         max-width: 500px;
     }
 
@@ -1250,7 +1256,18 @@ body {
         padding: 60px 0 80px;
     }
 
+    .advantage {
+        height: 85px;
+    }
+
+    .about__descr {
+        margin: 20px 0 20px;
+    }
+
     /* ////////////////////////////////////// */
+    .program__top {
+        margin-bottom: 42px;
+    }
 
     .program__title {
         text-align: center;
@@ -1262,7 +1279,7 @@ body {
     }
 
     .prog__price-text2 {
-        font-size: 2rem;
+        font-size: 2.900rem;
     }
 
     .program__discount {
@@ -1288,7 +1305,7 @@ body {
     }
 
     .accordion__title {
-        font-size: 2.15rem;
+        font-size: 2rem;
     }
 
     .accordion__control {
@@ -1300,6 +1317,7 @@ body {
     }
 
     /* ////////////////////////////////////////// */
+
     .footer__inner {
         grid-template:
             "a" auto
@@ -1326,6 +1344,10 @@ body {
         display: inline-block;
     }
 
+    .footer__logo-text {
+        width: 100vw;
+      }
+
     .socials__list {
         justify-content: center;
     }
@@ -1336,16 +1358,26 @@ body {
 }
 
 @media (max-width: 550px) {
+
     .program__bottom {
         grid-template-columns: 1fr;
+        margin-top: 25px;
     }
 
     .program__discount {
+        text-align: center;
         grid-area: 1 / 1 / 2 / 2;
-        max-width: 100%;
-        margin-bottom: 0px;
-        padding: 30px 81px 40px 40px;
+        margin: auto;
+        padding: 30px;
         max-height: 180px;
+    }
+
+    .program__discount p:nth-child(3) {
+        justify-content: center;
+    }
+
+    .program__discount-value {
+        margin: 10px 0;
     }
 
     .program__prices {
@@ -1404,11 +1436,15 @@ body {
         width: 100%;
     }
 
+    .about__img-control {
+        max-width: none;
+        border-radius: 0 0 20px 20px;
+    }
+
     /* //////////////////////////////////////////////////// */
 
     .about__inner {
         grid-template-rows: none;
-        gap: 20px;
     }
 
     .about__img-control {
@@ -1416,15 +1452,24 @@ body {
     }
 
     .about__title {
-        font-size: 3.75rem;
-    }
-
-    .about__heading {
-        margin-bottom: 15px;
+        font-size: 3.350rem;
     }
 
     .advantage {
         padding: 10px 15px;
+    }
+
+    .program__title {
+        /* font-size: 2.95rem; */
+        font-size: 12vw;
+    }
+
+    .accordion__title {
+        font-size: 1.75rem;
+    }
+
+    .accordion__item:not(#accordion__last-item) {
+        margin-bottom: 30px;
     }
 
     /* ////////////////////////////////////////////// */
