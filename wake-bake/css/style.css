@@ -80,10 +80,8 @@ body {
 .hamburger {
     display: none;
     position: relative;
-    width: 50px;
-    height: 50px;
-    min-width: 50px;
-    min-height: 50px;
+    width: 40px;
+    height: 40px;
     z-index: 100;
 }
 
@@ -94,7 +92,7 @@ body {
     left: 50%;
     background: var(--general-text);
     border-radius: 2rem;
-    height: 7px;
+    height: 3px;
     width: 100%;
 
     transition: var(--transition-time);
