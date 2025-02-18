@@ -78,7 +78,7 @@ accordions.forEach(element => {
 
 const swiper = new Swiper('.gallery__slider', {
 
-    spaceBetween: 15,
+    spaceBetween: 32,
     slidesPerView: 1.5,
 
     pagination: {
@@ -94,11 +94,12 @@ const swiper = new Swiper('.gallery__slider', {
     breakpoints: {
         601: {
             slidesPerView: 3,
+            spaceBetween: 16
         },
 
         801: {
             slidesPerView: 4,
-            spaceBetween: 32
+            spaceBetween: 16
         },
 
         1001: {
