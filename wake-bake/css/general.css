@@ -1,0 +1,71 @@
+:root {
+    --general-text: #312c27;
+    --title-text: #1f1711;
+    --accent-color: #ffa55c;
+    --general-bg: #fff9f4;
+    --accent-bg: #ffe0cb;
+    --accent-color-2: #ceaad0;
+
+    --transition-time: 0.4s;
+}
+
+body {
+    font-family: 'Montserrat', 'Gabriola', sans-serif;
+    line-height: 1.5;
+    background: var(--general-bg);
+    color: var(--general-text);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.main__about {
+    padding: 140px 0px;
+}
+
+.main__program {
+    padding-bottom: 140px;
+    color: var(--general-text);
+}
+
+.main__gallery {
+    padding-bottom: 145px;
+}
+
+.container {
+    max-width: 1310px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    background: var(--accent-color);
+    border-radius: 60px;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 18px 36px;
+    height: 62px;
+    transition: var(--transition-time);
+}
+
+.btn:hover {
+    background: #ff9138;
+}
+
+.title {
+    font-family: "Gabriola";
+    color: var(--title-text);
+    line-height: .8;
+}

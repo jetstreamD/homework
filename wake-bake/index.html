@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>МАКЕТ Арокен 3</title>
-    <link href="css/fonts.css" rel="stylesheet">
-    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/swiper-bundle.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -74,7 +73,7 @@
                         <div class="hero__img">
                             <img src="imgs/general/header-girl.png" alt="Счастливая студентка с тортом">
                             <div class="hero__img-control">
-                                <a data-fslightbox="gallery" class="hero__img-btn" href="videos/cake.mp4">
+                                <a data-fslightbox="video" class="hero__img-btn" href="videos/cake.mp4">
                                     <img src="imgs/icons/play.svg" alt="плей">
                                 </a>
                                 Посмотри, как готовятся наши торты
@@ -99,7 +98,7 @@
                         </div>
                         <div class="about__descr">
                             <div class="about__heading">
-                                <h2 class="about__title">
+                                <h2 class="about__title title">
                                     Наша школа —
                                 </h2>
                                 <span class="about__title-text">это уютный дом для начинающих кондитеров</span>
@@ -140,7 +139,7 @@
             </section>
             <section class="main__program program">
                 <div class="container">
-                    <h3 class="program__title">
+                    <h3 class="program__title title">
                         Программа обучения
                     </h3>
                     <div class="program__top">
@@ -712,7 +711,7 @@
                                                     </div>
                                                     <p class="syllabus__text">
                                                         Применение знаний о технологии выпечки к другим рецептам
-                                                    </p>  
+                                                    </p>
                                                 </li>
                                                 <li class="syllabus__item">
                                                     <div class="syllabus__icon">
@@ -776,6 +775,80 @@
                         </div>
                         <div class="program__img">
                             <img src="imgs/decor/cake.png" alt="Ягодный торт">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__gallery gallery">
+                <div class="container">
+                    <div class="gallery__inner">
+                        <div class="gallery__img">
+                            <img src="imgs/decor/cupcakes.png" alt="Капкейки">
+                        </div>
+                        <div class="gallery__content">
+                            <div class="gallery__info">
+                                <h5 class="gallery__title title">
+                                    Фотогалерея
+                                </h5>
+                                <p class="gallery__text">
+                                    Для комфортного обучения сделаны просторные аудитории, где предоставляется
+                                    всё необходимое оборудование. Здесь наши ученики создают кулинарные шедевры
+                                    под присмотром опытных наставников
+                                </p>
+                            </div>
+                            <div class="gallery__nav">
+                                <button class="gallery__prev" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M7.99151 1.00777L2.01551 6.98377L7.99151 12.9598L6.98351 13.9678L-0.000488365 6.98377L6.98351 -0.000227143L7.99151 1.00777Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M1.00781 7.70312L1.00781 6.26313L13.2478 6.26312L13.2478 7.70312L1.00781 7.70312Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+                                </button>
+                                <div class="gallery__pagination"></div>
+                                <button class="gallery__next" type="button">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M5.25654 12.96L11.2325 6.984L5.25654 1.008L6.26454 8.32834e-08L13.2485 6.984L6.26454 13.968L5.25654 12.96Z"
+                                            fill="#FFA55C" />
+                                        <path
+                                            d="M12.2402 6.26465L12.2402 7.70465L0.000234919 7.70465L0.000234902 6.26465L12.2402 6.26465Z"
+                                            fill="#FFA55C" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery__slider swiper">
+                        <div class="gallery__weapper swiper-wrapper">
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="imgs/gallery/1.jpg">
+                                <img src="imgs/gallery/1.jpg" alt="Кондитер декорирует торт">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="imgs/gallery/2.jpg">
+                                <img src="imgs/gallery/2.jpg" alt="Студентка готовит панкейки">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="imgs/gallery/3.jpg">
+                                <img src="imgs/gallery/3.jpg" alt="Фото портрет кондитера с её творениями">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="imgs/gallery/4.jpg">
+                                <img src="imgs/gallery/4.jpg" alt="Студентки декорируют торты">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="imgs/gallery/1.jpg">
+                                <img src="imgs/gallery/1.jpg" alt="">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="imgs/gallery/1.jpg">
+                                <img src="imgs/gallery/1.jpg" alt="">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="imgs/gallery/1.jpg">
+                                <img src="imgs/gallery/1.jpg" alt="">
+                            </a>
+                            <a class="gallery__slide swiper-slide" data-fslightbox="gallery" href="imgs/gallery/1.jpg">
+                                <img src="imgs/gallery/1.jpg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -914,6 +987,7 @@
         </div>
     </div>
     <script src="js/fslightbox.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
