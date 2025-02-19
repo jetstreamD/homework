@@ -94,7 +94,6 @@ const swiper = new Swiper('.gallery__slider', {
     breakpoints: {
         601: {
             slidesPerView: 3,
-            spaceBetween: 16
         },
 
         801: {
