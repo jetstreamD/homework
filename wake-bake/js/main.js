@@ -97,7 +97,6 @@ const swiper = new Swiper('.gallery__slider', {
         },
 
         801: {
-            slidesPerView: 4,
             spaceBetween: 16
         },
 
