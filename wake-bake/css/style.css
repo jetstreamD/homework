@@ -536,12 +536,6 @@
     transform: translate(-50%, -50%);
 }
 
-/* .gallery__next {}
-
-.gallery__slider {}
-
-.gallery__weapper {} */
-
 .gallery__slide {
     border-radius: 20px;
     overflow: hidden;
@@ -980,6 +974,7 @@
 }
 
 @media (max-width: 1000px) {
+
     .header__nav {
         transition: .6s;
         transform: translateY(-300%);
@@ -1011,6 +1006,16 @@
 
     /* //////////////////////////////////// */
 
+    .main__about {
+        padding: 60px 0 80px;
+    }
+
+    /* //////////////////////////////////// */
+
+    .main__program {
+        padding-bottom: 80px;
+    }
+
     .program__title {
         font-size: 4.250rem;
     }
@@ -1018,6 +1023,23 @@
     .accordion__title {
         font-size: 2.450rem;
         text-align: left;
+    }
+
+    /* //////////////////////////////////// */
+
+    .main__gallery {
+        padding-bottom: 80px;
+    }
+
+    /* //////////////////////////////////// */
+
+    .main__testimonials {
+        padding: 0 0 80px;
+    }
+
+    .testimonials__scrollbar.swiper-scrollbar {
+        width: 88%;
+        margin: 0 auto;
     }
 
     /* //////////////////////////////////// */
@@ -1062,10 +1084,6 @@
     }
 
     /* //////////////////////////////////// */
-
-    .main__program {
-        padding-bottom: 80px;
-    }
 
     .about__inner {
         grid-template-columns: repeat(2, 1fr);
@@ -1151,7 +1169,6 @@
         text-align: center;
         flex-direction: column;
     }
-
 }
 
 @media (max-width: 650px) {
@@ -1193,18 +1210,6 @@
 }
 
 @media (max-width: 600px) {
-
-    .main__about {
-        padding: 60px 0 80px;
-    }
-
-    .main__testimonials {
-        padding: 0 0 80px;
-    }
-
-    .main__gallery {
-        padding-bottom: 80px;
-    }
 
     .advantage {
         height: 85px;
@@ -1273,6 +1278,20 @@
     }
 
     .gallery__inner {
+        margin-bottom: 20px;
+    }
+
+    .gallery__nav {
+        align-self: center;
+    }
+
+    /* //////////////////////////////////////// */
+
+    .testimonials__nav {
+        align-self: center;
+    }
+
+    .testimonials__inner {
         margin-bottom: 20px;
     }
 
