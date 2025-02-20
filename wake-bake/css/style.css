@@ -551,6 +551,177 @@
     width: 100%;
 }
 
+/* ////////////////////////////////////////////// */
+
+.testimonials {}
+
+.container {}
+
+.testimonials__inner {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 57px;
+}
+
+.testimonials__content {}
+
+.testimonials__info {
+    max-width: 632px;
+}
+
+.testimonials__title {
+    margin-bottom: 20px;
+    font-size: 4.625rem;
+}
+
+.testimonials__text {}
+
+.testimonials__nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    font-size: 2.625rem;
+    line-height: .9;
+    font-family: "Gabriola";
+}
+
+.testimonials__prev,
+.testimonials__next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 100%;
+    border: 1.50px solid var(--accent-color);
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+
+    transition: var(--transition-time);
+}
+
+.swiper-button-disabled.testimonials__prev,
+.swiper-button-disabled.testimonials__next {
+    border: 1.50px solid #e1d9e1;
+}
+
+.swiper-button-disabled.testimonials__prev:hover,
+.swiper-button-disabled.testimonials__next:hover {
+    background: transparent;
+}
+
+.swiper-button-disabled.testimonials__prev path,
+.swiper-button-disabled.testimonials__next path {
+    fill: #e1d9e1;
+}
+
+.swiper-button-disabled.testimonials__prev:hover path,
+.swiper-button-disabled.testimonials__next:hover path {
+    fill: #e1d9e1;
+}
+
+.testimonials__prev path,
+.testimonials__next path {
+    transition: var(--transition-time);
+    background: var(--accent-color);
+}
+
+.testimonials__prev:hover,
+.testimonials__next:hover {
+    background: var(--accent-color);
+}
+
+.testimonials__prev:hover path,
+.testimonials__next:hover path {
+    fill: var(--general-bg);
+}
+
+.testimonials__slider {
+    overflow: visible;
+}
+
+.testimonials__wrapper {
+    margin-bottom: 40px;
+}
+
+.testimonials__slide {
+    display: flex;
+    height: auto;
+    background: #ffe0cb;
+    border-radius: 20px;
+    padding: 30px 30px 40px;
+    gap: 30px;
+    transition: var(--transition-time);
+    opacity: 0.5;
+}
+
+.testimonials__slide.swiper-slide {
+    transform: scale(.9);
+}
+
+.swiper-slide-active.testimonials__slide {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.testimonials__student {
+    text-align: center;
+    max-width: 165px;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.testimonials__student-img {
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.testimonials__student-img img {
+    width: 100%;
+}
+
+.testimonials__student-name {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+.testimonials__student-inst {
+    color: var(--accent-color-2);
+}
+
+.testimonials__quote {
+    line-height: 1.5;
+}
+
+.testimonials__quote span {
+    display: block;
+    font-family: "Gabriola";
+    color: var(--title-text);
+    font-size: 2rem;
+    line-height: .9;
+    margin-bottom: 10px;
+}
+
+.testimonials__scrollbar.swiper-scrollbar {
+    position: static;
+    width: 100%;
+    height: 7px;
+}
+
+.testimonials__scrollbar {
+    background: var(--accent-bg);
+}
+
+.testimonials__scrollbar .swiper-scrollbar-drag {
+    background: var(--accent-color);
+}
+
 /* //////////////////////////////////////////// */
 
 
@@ -963,6 +1134,24 @@
     .program__prices-block {
         text-align: end;
     }
+
+    /* ////////////////////////////// */
+
+    .testimonials__inner {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .testimonials__nav {
+        align-self: end;
+    }
+
+    .testimonials__slide {
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width: 650px) {
@@ -1007,6 +1196,14 @@
 
     .main__about {
         padding: 60px 0 80px;
+    }
+
+    .main__testimonials {
+        padding: 0 0 80px;
+    }
+
+    .main__gallery {
+        padding-bottom: 80px;
     }
 
     .advantage {
@@ -1275,6 +1472,11 @@
         width: 100%;
         padding: 5px 10px;
     }
+
+    /* ////////////////////////////////// */
+    .testimonials__slide {
+        padding: 25px 15px 15px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -1290,6 +1492,10 @@
 
     .program__prices-title br {
         display: none;
+    }
+
+    .testimonials__inner {
+        margin-bottom: 20px;
     }
 
     .modal__img {
