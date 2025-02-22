@@ -57,10 +57,20 @@ const accordions = document.querySelectorAll('.accordion')
 
 accordions.forEach(element => {
     element.addEventListener('click', (event) => {
+
         const accordionControl = event.target.closest('.accordion__control')
         if (!accordionControl) return
         const accordionItem = accordionControl.parentElement
         const accordionContent = accordionControl.nextElementSibling
+
+        accordions.forEach(accordion => {
+            const content = accordion.querySelector('.accordion__content');
+            const anyAccordion = accordion;
+            if (anyAccordion !== accordionItem) {
+                anyAccordion.classList.remove('accordion__item--active');
+                content.style.maxHeight = null;
+            }
+        });
 
         accordionItem.classList.toggle('accordion__item--active')
 
@@ -73,8 +83,8 @@ accordions.forEach(element => {
 })
 
 ////////////////////////////////////////////////////////////////
-/////////////////////////G a l l e r y///////////////////////////
-///////////////////////     SLIDER      //////////////////////////
+/////////////////////////G a l l e r y//////////////////////////
+///////////////////////     SLIDER      ////////////////////////
 
 const swiper = new Swiper('.gallery__slider', {
     spaceBetween: 10,
@@ -113,8 +123,8 @@ const swiper = new Swiper('.gallery__slider', {
 });
 
 ////////////////////////////////////////////////////////////////
-/////////////////////T e s t i m o n i a l s///////////////////////////
-///////////////////////     SLIDER      //////////////////////////
+/////////////////////T e s t i m o n i a l s///////////////////
+///////////////////////     SLIDER      //////////////////////
 
 new Swiper('.testimonials__slider', {
 
@@ -148,6 +158,14 @@ new Swiper('.testimonials__slider', {
     }
 });
 
+
+////////////////////////////////////////////////////////////////
+/////////////////////     C o n t a c t     ///////////////////
+///////////////////////     INPUT MASK       /////////////////
+
+const telInputs = document.querySelectorAll('input[type="tel"');
+const im = new Inputmask('+7 (999) 999 99 99');
+im.mask(telInputs)
 
 
 

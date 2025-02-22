@@ -210,10 +210,6 @@
     transition: var(--transition-time);
 }
 
-.accordion__item--active .accordion__control {
-    padding-bottom: 20px;
-}
-
 .accordion__title {
     color: var(--title-text);
     font-family: "Gabriola";
@@ -547,9 +543,7 @@
 
 /* ////////////////////////////////////////////// */
 
-.testimonials {}
-
-.container {}
+/* .testimonials {} */
 
 .testimonials__inner {
     display: flex;
@@ -559,7 +553,7 @@
     margin-bottom: 57px;
 }
 
-.testimonials__content {}
+/* .testimonials__content {} */
 
 .testimonials__info {
     max-width: 632px;
@@ -570,7 +564,7 @@
     font-size: 4.625rem;
 }
 
-.testimonials__text {}
+/* .testimonials__text {} */
 
 .testimonials__nav {
     display: flex;
@@ -718,6 +712,162 @@
 
 /* //////////////////////////////////////////// */
 
+.contact {
+    padding: 140px 0;
+    background: url("../imgs/backgrounds/contact-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
+}
+
+.contact__inner {
+    display: flex;
+    align-items: end;
+    position: relative;
+    gap: 84px;
+}
+
+.contact__img {
+    position: relative;
+}
+
+.contact__inner::before {
+    content: url("../imgs/decor/berries.png");
+    position: absolute;
+    top: -4%;
+    left: 0%;
+}
+
+.contact__inner::after {
+    content: url("../imgs/decor/berries-2.png");
+    position: absolute;
+    top: 4%;
+    right: 0%;
+}
+
+.contact__img img {
+    width: 100%;
+    filter: drop-shadow(0 4px 30px 0 rgba(198, 176, 161, 0.3));
+}
+
+.contact__entryarea-name {
+    position: absolute;
+    bottom: 17px;
+    left: 28px;
+    color: #ac907a;
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* .contact__img {} */
+
+.contact__body {
+    max-width: 420px;
+}
+
+.contact__title {
+    font-size: 4.625rem;
+    margin-bottom: 20px;
+}
+
+.contact__text {
+    margin-bottom: 40px;
+}
+
+/* .contact__form {} */
+
+/* .contact__entryarea {} */
+
+.contact__entryarea-input {
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.contact__input {
+    background: transparent;
+    margin-bottom: 20px;
+}
+
+.contact__check-label {
+    display: flex;
+    align-items: start;
+    font-size: 13px;
+    gap: 5px;
+    max-width: 288px;
+    margin-bottom: 20px;
+}
+
+.contact__input:focus::placeholder {
+    color: transparent;
+}
+
+.contact__input {
+    background: transparent;
+    border: 1px solid #ac907a;
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    width: 308px;
+    width: 100%;
+    height: 62px;
+    font-weight: 400;
+    font-size: 16px;
+
+    transition: .7s;
+}
+
+.contact__input:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.contact__input:focus {
+    color: black;
+    border-color: var(--accent-color);
+}
+
+.contact__input:focus::placeholder {
+    color: transparent;
+}
+
+.contact__check-label a {
+    text-decoration: underline;
+    transition: var(--transition-time);
+}
+
+.contact__check-label a:hover {
+    color: var(--accent-color);
+}
+
+.contact__checkbox {
+    appearance: none;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid #ac907a;
+    flex-shrink: 0;
+    border-radius: 4px;
+    padding: 4px 2px 3px 1px;
+
+    transition: var(--transition-time);
+}
+
+.contact__checkbox:hover {
+    border: 1.5px solid var(--accent-color);
+}
+
+.contact__checkbox:checked {
+    content: url("../imgs/icons/check.svg");
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    inset: 0;
+}
+
+.contact__btn {
+    width: 420px;
+}
+
+/* /////////////////////////////////////////////// */
 
 .modal {
     display: flex;
@@ -741,6 +891,7 @@
     position: fixed;
     width: 200dvw;
     height: 200dvh;
+    /* inset: 0; */
     background: rgba(0, 0, 0, 0.4);
     z-index: -500;
     pointer-events: all;
@@ -915,6 +1066,15 @@
     .program__img {
         display: none;
     }
+
+    .contact__inner {
+        gap: 30px;
+        align-items: center;
+    }
+
+    .contact__inner::after {
+        top: -20%;
+    }
 }
 
 @media (max-width: 1040px) {
@@ -1045,6 +1205,12 @@
 
     /* //////////////////////////////////// */
 
+    .contact {
+        padding-bottom: 80px;
+    }
+
+    /* ///////////////////////// */
+
     .footer__inner {
         gap: 40px;
         grid-template:
@@ -1056,6 +1222,10 @@
         display: grid;
         justify-content: end;
         text-align: end;
+    }
+
+    .footer__col-link:not(.footer-col-link-1)::before {
+        left: 55%;
     }
 }
 
@@ -1071,6 +1241,27 @@
 
     .gallery__img {
         display: none;
+    }
+
+    .contact__inner {
+        justify-content: center;
+    }
+
+    .contact__img {
+        display: none;
+    }
+
+    .contact__inner {
+        justify-content: center;
+    }
+
+    .contact__title,
+    .contact__text {
+        text-align: center;
+    }
+
+    .contact__inner::before {
+        content: none;
     }
 }
 
@@ -1296,6 +1487,8 @@
         margin-bottom: 20px;
     }
 
+    /* /////////////////////////////////////////// */
+
     /* ////////////////////////////////////////// */
 
     .footer__inner {
@@ -1318,6 +1511,10 @@
     .footer__col-list {
         justify-content: center;
         text-align: center;
+    }
+
+    .footer__col-link:not(.footer-col-link-1)::before {
+        left: 24%;
     }
 
     .footer__logo {
@@ -1466,23 +1663,18 @@
         max-width: 84vw;
     }
 
-/*     ////////////////////////////////////////////////// */
-
     .gallery__title {
         text-align: center;
     }
-
-/*     //////////////////////////////////////// */
-
-    .testimonials__title {
-        text-align: center;
-    }
-
 
     /* ////////////////////////////////////////////// */
 
     .title {
         font-size: 12vw;
+    }
+
+    .testimonials__title {
+        text-align: center;
     }
 
     /* ////////////////////////////////////////////// */
@@ -1510,6 +1702,19 @@
     .testimonials__slide {
         padding: 25px 15px 15px;
     }
+
+    /* ///////////////////////////////// */
+
+    .contact__form,
+    .contact__check-label,
+    .contact__btn {
+        max-width: 95vw;
+    }
+
+    .contact__check-label {
+        margin: 0 15px 20px 15px;
+    }
+
 }
 
 @media (max-width: 360px) {

@@ -22,22 +22,22 @@
                         <nav class="header__nav">
                             <ul class="header__list">
                                 <li class="header__item">
-                                    <a class="header__link" href="">
+                                    <a class="header__link" href="#program">
                                         Программа обучения
                                     </a>
                                 </li>
                                 <li class="header__item">
-                                    <a class="header__link" href="">
+                                    <a class="header__link" href="#gallery">
                                         Галерея
                                     </a>
                                 </li>
                                 <li class="header__item">
-                                    <a class="header__link" href="">
+                                    <a class="header__link" href="#testimonials">
                                         Отзывы
                                     </a>
                                 </li>
                                 <li class="header__item">
-                                    <a class="header__link" href="">
+                                    <a class="header__link" href="#contact">
                                         Контакты
                                     </a>
                                 </li>
@@ -138,7 +138,7 @@
                 </div>
             </section>
 
-            <section class="main__program program">
+            <section class="main__program program" id="program">
                 <div class="container">
                     <h3 class="program__title title">
                         Программа обучения
@@ -781,7 +781,7 @@
                 </div>
             </section>
 
-            <section class="main__gallery gallery">
+            <section class="main__gallery gallery" id="gallery">
                 <div class="container">
                     <div class="gallery__inner">
                         <div class="gallery__img">
@@ -856,7 +856,7 @@
                 </div>
             </section>
 
-            <section class="main__testimonials testimonials">
+            <section class="main__testimonials testimonials" id="testimonials">
                 <div class="container">
                     <div class="testimonials__inner">
                         <div class="testimonials__info">
@@ -911,7 +911,7 @@
                                 </div>
                                 <blockquote class="testimonials__quote">
                                     <span>
-                                        Спасибо за курс! 
+                                        Спасибо за курс!
                                     </span>
                                     Действительно понятный и доступный курс для начинающего кондитера. Для того
                                     самого, который ничего-ничего не знал, не умел. А спустя месяц уже знает,
@@ -971,7 +971,7 @@
                                         <img src="imgs/testimonials/2.jpg" alt="">
                                     </div>
                                     <div class="testimonials__student-name">
-                                        Александра
+                                        Елизавета
                                     </div>
                                     <div class="testimonials__student-inst">
                                         <img src="imgs/icons/inst-2.svg" alt="">
@@ -994,7 +994,7 @@
                                         <img src="imgs/testimonials/2.jpg" alt="">
                                     </div>
                                     <div class="testimonials__student-name">
-                                        Александра
+                                        Елизавета
                                     </div>
                                     <div class="testimonials__student-inst">
                                         <img src="imgs/icons/inst-2.svg" alt="">
@@ -1017,7 +1017,7 @@
                                         <img src="imgs/testimonials/2.jpg" alt="">
                                     </div>
                                     <div class="testimonials__student-name">
-                                        Александра
+                                        Елизавета
                                     </div>
                                     <div class="testimonials__student-inst">
                                         <img src="imgs/icons/inst-2.svg" alt="">
@@ -1040,7 +1040,7 @@
                                         <img src="imgs/testimonials/2.jpg" alt="">
                                     </div>
                                     <div class="testimonials__student-name">
-                                        Александра
+                                        Елизавета
                                     </div>
                                     <div class="testimonials__student-inst">
                                         <img src="imgs/icons/inst-2.svg" alt="">
@@ -1063,7 +1063,7 @@
                                         <img src="imgs/testimonials/2.jpg" alt="">
                                     </div>
                                     <div class="testimonials__student-name">
-                                        Александра
+                                        Елизавета
                                     </div>
                                     <div class="testimonials__student-inst">
                                         <img src="imgs/icons/inst-2.svg" alt="">
@@ -1086,7 +1086,7 @@
                                         <img src="imgs/testimonials/2.jpg" alt="">
                                     </div>
                                     <div class="testimonials__student-name">
-                                        Александра
+                                        Елизавета
                                     </div>
                                     <div class="testimonials__student-inst">
                                         <img src="imgs/icons/inst-2.svg" alt="">
@@ -1109,7 +1109,7 @@
                                         <img src="imgs/testimonials/2.jpg" alt="">
                                     </div>
                                     <div class="testimonials__student-name">
-                                        Александра
+                                        Елизавета
                                     </div>
                                     <div class="testimonials__student-inst">
                                         <img src="imgs/icons/inst-2.svg" alt="">
@@ -1128,6 +1128,42 @@
                             </div>
                         </div>
                         <div class="testimonials__scrollbar swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="contact__inner">
+                        <div class="contact__img">
+                            <img src="imgs/decor/cake-2.png" alt="">
+                        </div>
+                        <div class="contact__body">
+                            <h2 class="contact__title title">
+                                Оставить заявку <br> на обучение
+                            </h2>
+                            <p class="contact__text">
+                                Заполни контактные данные, и наш менеджер свяжется с тобой в ближайшее время
+                            </p>
+                            <form class="contact__form">
+                                <label class="contact__entryarea entryarea">
+                                    <input class="contact__entryarea-input entryarea-input" type="text"
+                                        placeholder="Имя">
+                                    <span class="contact__entryarea-name">Введите имя</span>
+                                </label>
+                                <input class="contact__input" type="tel" placeholder="Телефон">
+                                <label class="contact__check-label">
+                                    <input class="contact__checkbox" type="checkbox">
+                                    <p>
+                                        Нажимая на кнопку, вы соглашаетесь с 
+                                        <a href="#" target="_blank">политикой конфиденциальности</a>
+                                    </p>
+                                </label>
+                            </form>
+                            <button class="contact__btn btn" type="button">
+                                Записаться на курс
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1186,7 +1222,7 @@
                     <div class="footer__col">
                         <ul class="footer__col-list">
                             <li class="footer__col-item">
-                                <a class="footer__col-link" href="">
+                                <a class="footer__col-link footer-col-link-1" href="">
                                     Программа обучения
                                 </a>
                             </li>
@@ -1266,6 +1302,7 @@
     </div>
     <script src="js/fslightbox.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

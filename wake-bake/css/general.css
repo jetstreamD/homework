@@ -57,6 +57,7 @@ body {
     text-align: center;
     background: var(--accent-color);
     border-radius: 60px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
     padding: 18px 36px;
@@ -66,6 +67,44 @@ body {
 
 .btn:hover {
     background: #ff9138;
+}
+
+.entryarea {
+    position: relative;
+}
+
+.entryarea-input {
+    background: var(--general-bg);
+    border: 1px solid #ac907a;
+    border-radius: 100px;
+    padding: 19px 42px 19px 28px;
+    width: 308px;
+    width: 100%;
+    height: 62px;
+    font-weight: 400;
+    font-size: 16px;
+
+    transition: .7s;
+}
+
+.entryarea-input:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.entryarea-input:focus {
+    padding: 26px 42px 12px 28px;
+    color: black;
+    border-color: var(--accent-color);
+}
+
+.entryarea-input:focus::placeholder {
+    color: var(--accent-color);
+}
+
+.entryarea-input:focus+span {
+    opacity: 1;
+    visibility: visible;
 }
 
 .title {
