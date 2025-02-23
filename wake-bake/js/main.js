@@ -64,20 +64,25 @@ accordions.forEach(element => {
         const accordionContent = accordionControl.nextElementSibling
 
         accordions.forEach(accordion => {
-            const content = accordion.querySelector('.accordion__content');
+            const content = accordion.querySelector('.accordion__content')
+            const accordionIcon = accordion.querySelector('.accordion__icon')
             const anyAccordion = accordion;
             if (anyAccordion !== accordionItem) {
-                anyAccordion.classList.remove('accordion__item--active');
+                anyAccordion.classList.remove('accordion__item--active')
                 content.style.maxHeight = null;
+                accordionIcon.style.transform = 'rotate(0deg)'
             }
         });
 
         accordionItem.classList.toggle('accordion__item--active')
-
+        const accordionIcon = accordionControl.querySelector('.accordion__icon');
+        
         if (accordionItem.classList.contains('accordion__item--active')) {
             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
+            accordionIcon.style.transform = 'rotate(90deg)'
         } else {
             accordionContent.style.maxHeight = null
+            accordionIcon.style.transform = 'rotate(0deg)';
         }
     })
 })
