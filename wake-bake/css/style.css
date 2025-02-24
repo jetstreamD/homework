@@ -791,7 +791,7 @@
     margin-bottom: 20px;
 }
 
-.contact__check-label {
+.contact__check {
     display: flex;
     align-items: start;
     font-size: 13px;
@@ -832,13 +832,18 @@
     color: transparent;
 }
 
-.contact__check-label a {
+.contact__checkbox:hover {
+    border-color: var(--accent-color);
+}
+
+.contact__check-link {
     text-decoration: underline;
     transition: var(--transition-time);
 }
 
-.contact__check-label a:hover {
+.contact__check-link:hover {
     color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .contact__checkbox {
@@ -852,10 +857,6 @@
     padding: 4px 2px 3px 1px;
 
     transition: var(--transition-time);
-}
-
-.contact__checkbox:hover {
-    border: 1.5px solid var(--accent-color);
 }
 
 .contact__checkbox:checked {
@@ -1713,7 +1714,7 @@
         max-width: 95vw;
     }
 
-    .contact__check-label {
+    .contact__check {
         margin: 0 15px 20px 15px;
     }
 
