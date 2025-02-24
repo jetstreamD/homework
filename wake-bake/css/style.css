@@ -1139,6 +1139,10 @@
 
 @media (max-width: 1000px) {
 
+    html {
+        scroll-padding-top: 2em;
+    }
+
     .header__nav {
         transition: .6s;
         transform: translateY(-300%);
