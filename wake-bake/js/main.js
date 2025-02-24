@@ -52,37 +52,34 @@ function tabToggle(event) {
 }
 
 ///////////////////////   ACCORDIONS  ///////////////////////////
-
 const accordions = document.querySelectorAll('.accordion')
 
-accordions.forEach(element => {
-    element.addEventListener('click', (event) => {
+accordions.forEach(accordion => {
 
-        const accordionControl = event.target.closest('.accordion__control')
-        if (!accordionControl) return
-        const accordionItem = accordionControl.parentElement
-        const accordionContent = accordionControl.nextElementSibling
+    const accordionControl = accordion.querySelector('.accordion__control')
+    const accordionContent = accordion.querySelector('.accordion__content')
+    const accordionIcon = accordionControl.querySelector('.accordion__icon')
 
-        accordions.forEach(accordion => {
-            const content = accordion.querySelector('.accordion__content')
-            const accordionIcon = accordion.querySelector('.accordion__icon')
-            const anyAccordion = accordion;
-            if (anyAccordion !== accordionItem) {
-                anyAccordion.classList.remove('accordion__item--active')
-                content.style.maxHeight = null;
-                accordionIcon.style.transform = 'rotate(0deg)'
+    accordionControl.addEventListener('click', () => {
+
+        const accordionIsActive = accordion.classList.toggle('accordion__item--active')
+
+        accordions.forEach(otherAccordion => {
+            if (otherAccordion !== accordion) {
+                otherAccordion.classList.remove('accordion__item--active')
+                const otherAccContent = otherAccordion.querySelector('.accordion__content')
+                const otherAccIcon = otherAccordion.querySelector('.accordion__icon')
+                otherAccContent.style.maxHeight = null
+                otherAccIcon.style.transform = 'rotate(0deg)'
             }
-        });
+        })
 
-        accordionItem.classList.toggle('accordion__item--active')
-        const accordionIcon = accordionControl.querySelector('.accordion__icon');
-        
-        if (accordionItem.classList.contains('accordion__item--active')) {
+        if (accordionIsActive) {
             accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
             accordionIcon.style.transform = 'rotate(90deg)'
         } else {
             accordionContent.style.maxHeight = null
-            accordionIcon.style.transform = 'rotate(0deg)';
+            accordionIcon.style.transform = 'rotate(0deg)'
         }
     })
 })

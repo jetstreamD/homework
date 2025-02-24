@@ -236,7 +236,6 @@
 
 .accordion__control:hover .accordion__icon {
     background: var(--accent-color);
-    transform: rotate(90deg);
 }
 
 .accordion__control:hover .accordion__icon path {
@@ -245,11 +244,14 @@
 
 .accordion__item--active .accordion__icon {
     background: var(--accent-color);
-    transform: rotate(90deg);
 }
 
 .accordion__item--active .accordion__icon path {
     fill: var(--general-bg);
+}
+
+.accordion__icon {
+    background: var(--general-bg);
 }
 
 .accordion__content {
