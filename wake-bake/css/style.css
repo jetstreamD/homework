@@ -1008,18 +1008,6 @@
     line-height: 1.6;
 }
 
-@media (hover: hover) {
-    .contact__checkbox:hover {
-        border-color: #ac907a;
-    }
-}
-
-@media (hover: none) {
-    .contact__checkbox:active {
-        border-color: #ac907a;
-    }
-}
-
 @media (max-width: 1200px) {
 
     .hero {
@@ -1226,6 +1214,10 @@
 
     .contact {
         padding-bottom: 80px;
+    }
+
+    .contact__checkbox:not(:checked):hover {
+        border-color: #ac907a;
     }
 
     /* ///////////////////////// */
