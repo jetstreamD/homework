@@ -1008,9 +1008,15 @@
     line-height: 1.6;
 }
 
-@media only screen {
+@media (hover: hover) {
     .contact__checkbox:hover {
-        border-color: initial;
+        border-color: var(--accent-color);
+    }
+}
+
+@media (hover: none) {
+    .contact__checkbox:active {
+        border-color: var(#ac907a);
     }
 }
 
