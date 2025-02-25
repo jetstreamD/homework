@@ -1008,6 +1008,12 @@
     line-height: 1.6;
 }
 
+@media only screen {
+    .contact__checkbox:hover {
+        border-color: unset;
+    }
+}
+
 @media (max-width: 1200px) {
 
     .hero {
