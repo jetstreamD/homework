@@ -2,12 +2,14 @@
 
 /// Header hamburger
 
+const body = document.querySelector('body')
 const hamburger = document.querySelector('.hamburger')
 const offScreenMenu = document.querySelector('.offscreen-menu')
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active')
     offScreenMenu.classList.toggle('active')
+    body.classList.toggle('no-scroll')
 })
 
 // const hamburgerLink = document.querySelectorAll('.header__link')
