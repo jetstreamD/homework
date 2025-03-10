@@ -52,8 +52,9 @@
     opacity: 0;
     z-index: 1000;
     transform: translateY(-300%);
+    overflow: hidden;
     
-    height: 100vh;
+    height: 100dvh;
 
     transition: .6s ease;
 }
