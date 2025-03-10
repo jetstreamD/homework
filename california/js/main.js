@@ -1,7 +1,7 @@
 
 
 /// Header hamburger
-
+// const headerList = document.querySelector('.header__list')
 const body = document.querySelector('body')
 const hamburger = document.querySelector('.hamburger')
 const offScreenMenu = document.querySelector('.offscreen-menu')
@@ -21,6 +21,34 @@ hamburger.addEventListener('click', () => {
 //         }
 //     })
 // })
+
+/// dropdown
+
+document.addEventListener('click', event => {
+    const itIsDropdownBtn = event.target.matches('[data-dropdown-btn]');
+    const dropdownIcon = event.target.querySelector('.dropdown-icon');
+    const dropdown = event.target.nextElementSibling;
+
+    if (itIsDropdownBtn) {
+        document.querySelectorAll('[data-dropdown].active').forEach(openDropdown => {
+            if (openDropdown !== dropdown) {
+                openDropdown.classList.remove('active')
+                openDropdown.previousElementSibling.querySelector('.dropdown-icon').classList.remove('active');
+            }
+        });
+
+        dropdown.classList.toggle('active')
+        dropdownIcon.classList.toggle('active')
+
+    } else if (!event.target.closest('[data-dropdown]')) {
+        document.querySelectorAll('[data-dropdown].active').forEach(dropdown => {
+            dropdown.classList.remove('active')
+            dropdown.previousElementSibling.querySelector('.dropdown-icon').classList.remove('active');
+        })
+    }
+
+})
+
 
 //// Home swiper carousel
 
@@ -87,7 +115,7 @@ new Swiper('.home__swiper', {
 if (window.innerWidth > 1100) {
     swiperConfig.effect = 'fade';
 } else {
-    swiperConfig.effect = 'slide'; 
+    swiperConfig.effect = 'slide';
 }
 
 new Swiper('.home__swiper', swiperConfig);
