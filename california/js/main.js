@@ -54,7 +54,7 @@ new Swiper('.home__swiper', {
     autoplay: {
         delay: 7000,
 
-        stopOnLastSlide: true,
+        stopOnLastSlide: false,
 
         disableOnInteraction: true,
     },
@@ -83,10 +83,23 @@ new Swiper('.home__swiper', {
 
 });
 
-if (window.innerWidth > 1100) {
-    swiperConfig.effect = 'fade';
-} else {
-    swiperConfig.effect = 'slide';
-}
+new Swiper('.ideas__swiper', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    loop: true,
+    autoHeight: true,
+    speed: 800,
+    effect: 'fade',
 
-new Swiper('.home__swiper', swiperConfig);
+    fadeEffect: {
+        crossFade: true,
+    },
+
+    autoplay: {
+        delay: 5000,
+
+        stopOnLastSlide: false,
+
+        disableOnInteraction: false,
+    },
+});

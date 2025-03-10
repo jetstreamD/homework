@@ -81,6 +81,7 @@ body.no-scroll {
 }
 
 .subtitle {
+    font-family: var(--font-Readex);
     margin: 0 auto;
     text-align: center;
     font-weight: 400;
