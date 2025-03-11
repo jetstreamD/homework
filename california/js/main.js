@@ -26,16 +26,15 @@ hamburger.addEventListener('click', () => {
 new Swiper('.home__swiper', {
     direction: 'horizontal',
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 25,
     centeredSlides: true,
-    grabCursor: true,
     loop: true,
     autoHeight: true,
-    freeMode: true,
+    // freeMode: true,
     initialSlide: 0,
     speed: 800,
-    effect: 'fade',
-    // effect: 'slide',
+    // effect: 'fade',
+    effect: 'slide',
 
     pagination: {
         el: '.home__pagination',
@@ -47,9 +46,7 @@ new Swiper('.home__swiper', {
         nextEl: '.home__next',
     },
 
-    fadeEffect: {
-        crossFade: true,
-    },
+    
 
     autoplay: {
         delay: 7000,
@@ -72,6 +69,10 @@ new Swiper('.home__swiper', {
 
         pageUpDown: true,
     },
+
+    // fadeEffect: {
+    //     crossFade: true,
+    // },
 
     // mousewheel: {
 
