@@ -56,7 +56,7 @@ body.no-scroll {
     display: inline-block;
     font-family: var(--font-Inter);
     max-width: 11.875rem;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     border: 1px solid var(--general-text);
     padding: .875rem 3.9375rem;
     font-size: 1.125rem;
@@ -104,7 +104,7 @@ body.no-scroll {
     text-align: left;
     text-transform: uppercase;
     background: #fff;
-    box-shadow: 0 5px 5px 0 rgb(0, 0, 0, .2);
+    box-shadow: 0 .3125rem .3125rem 0 rgb(0, 0, 0, .2);
     top: calc(100% + .2rem);
     min-width: 9.375rem;
     padding: 1.25rem;

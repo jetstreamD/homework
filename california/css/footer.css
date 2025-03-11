@@ -1,0 +1,22 @@
+.footer {
+    background: #f8f9fa;
+    border-top: 1px solid #c5c5c5;
+}
+
+.footer__wrapper {
+    display: flex;
+}
+
+/* .footer__california {}
+
+.footer__california-logo {}
+
+.footer__california-text {}
+
+.footer__list {}
+
+.footer__list-name {}
+
+.footer__list-item {}
+
+.footer__list-link {} */
