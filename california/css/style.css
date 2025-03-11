@@ -360,7 +360,6 @@ h1 {
 .ideas__swiper {
     display: flex;
     gap: 0 2.1875rem;
-    border-radius: 1rem;
     margin-bottom: 4.625rem;
 }
 
@@ -370,6 +369,8 @@ h1 {
 }
 
 .ideas__wrapper {
+    overflow: hidden;
+    border-radius: 1rem;
     max-width: 38.75rem;
     max-height: 26.25rem;
 }
