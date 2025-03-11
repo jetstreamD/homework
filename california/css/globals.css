@@ -16,10 +16,15 @@ body.no-scroll {
     overflow: hidden;
 }
 
+a {
+    position: relative;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    box-sizing: border-box;
     min-height: 100%;
     width: 100%;
 }
@@ -32,6 +37,10 @@ body.no-scroll {
     width: 100%;
     margin: 0 auto;
     padding: 0 0.938rem;
+}
+
+.section {
+    padding-bottom: 3.125rem;
 }
 
 .underlining::after {
@@ -94,6 +103,10 @@ body.no-scroll {
     height: auto;
 
     transition: transform 0.3s ease;
+}
+
+.product-img:hover {
+    transform: scale(1.1);
 }
 
 /* // dropdown */
