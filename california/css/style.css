@@ -655,6 +655,10 @@ h1 {
         margin-bottom: 2.5rem;
     }
 
+    .product-img {
+        transition: none;
+    }
+
     /* // */
 
     .latest {
@@ -672,6 +676,10 @@ h1 {
             "latest__laptops latest__laptops"
             "latest__phones latest__tablets"
             "latest__watch latest__watch";
+    }
+
+    .latest__product {
+        border-radius: 1rem;
     }
 
     .latest__laptops,
@@ -718,6 +726,21 @@ h1 {
 
     .latest__tablets-wrap {
         padding: 2.5rem 1.875rem 2.5rem 1.875rem;
+    }
+
+    .showcase__product {
+        margin: 0 auto;
+    }
+
+    .showcase__product-wrap {
+        text-align: center;
+    }
+
+    .showcase__product-img {
+        display: flex;
+        margin: 0 auto;
+        width: 80%;
+        padding: 0 1.75rem .9375rem 1.75rem;
     }
 
     .best-around__title {
@@ -768,10 +791,6 @@ h1 {
 
 @media (max-width: 800px) {
 
-    .latest__products {
-        gap: 2vh 1.25rem;
-    }
-
     .home__slide {
         display: flex;
         flex-direction: column;
@@ -798,14 +817,18 @@ h1 {
         margin-bottom: .3125rem;
     }
 
+    .latest__products {
+        gap: .9375rem;
+    }
+
     .showcase {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1.7188rem;
     }
 
-    .showcase__product {
-        margin: 0 auto;
+    .showcase__product-name {
+        font-size: 18.5px;
     }
 
     .ideas__swiper {
@@ -841,6 +864,7 @@ h1 {
 
     .product-text {
         font-size: 1.125rem;
+        padding-bottom: 4px;
     }
 
     .best-around__categories-card__title {
@@ -874,6 +898,10 @@ h1 {
 
 @media (max-width: 500px) {
 
+    .product-img {
+        width: 80%;
+    }
+
     .bestsellers__subtitle {
         margin-bottom: 0;
     }
@@ -884,14 +912,6 @@ h1 {
         justify-content: center;
         align-items: center;
         gap: 1.7188rem;
-    }
-
-    .showcase__product-img {
-        padding: 0 1.75rem .9375rem 1.75rem;
-    }
-
-    .showcase__product-wrap {
-        text-align: center;
     }
 
     .showcase__product-text {
@@ -907,6 +927,7 @@ h1 {
     }
 
     .best-around__categories-card__img {
+        width: 85%;
         padding: 0 3.125rem;
     }
 
