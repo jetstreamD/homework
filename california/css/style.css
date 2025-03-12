@@ -898,8 +898,15 @@ h1 {
 
 @media (max-width: 500px) {
 
-    .product-img {
-        width: 80%;
+    /* .latest__product {
+    } */
+
+    .latest__laptops, .latest__watch {
+        max-width: 100%;
+    }
+
+    .latest__phones, .latest__tablets {
+        max-width: 12.5rem;
     }
 
     .bestsellers__subtitle {
