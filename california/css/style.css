@@ -790,7 +790,8 @@ h1 {
 
     .home__slide-wrapper {
         text-align: center;
-        padding: 3.125rem 3.125rem .625rem 3.125rem;
+        /* padding: 3.125rem 3.125rem .625rem 3.125rem; */
+        padding: 1.5rem 3.125rem .625rem 3.125rem;
     }
 
     .home__pagination {
@@ -832,6 +833,10 @@ h1 {
 
     .latest__subtitle {
         font-size: 1rem;
+    }
+
+    .latest__phones-text {
+        font-size: 1.125rem;
     }
 
     .product-text {
@@ -893,18 +898,26 @@ h1 {
         margin: .5625rem auto .5rem auto;
     }
 
+    .subtitle {
+        margin-bottom: 1.3rem;
+    }
+
     .best-around__categories-card-wrap {
-        padding: 2.5625rem 3.125rem 1.875rem 3.125rem;
+        padding: 1.7rem 2rem 1.3rem 2rem;
     }
 
     .best-around__categories-card__img {
         padding: 0 3.125rem;
     }
 
+    .ideas__phrases {
+        gap: 1.2rem 0;
+    }
+
     .footer__list {
         max-width: 9.375rem;
     }
-    
+
     .footer__list-name {
         font-size: 18px;
     }
