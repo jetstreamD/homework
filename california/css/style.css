@@ -900,4 +900,12 @@ h1 {
     .best-around__categories-card__img {
         padding: 0 3.125rem;
     }
+
+    .footer__list {
+        max-width: 9.375rem;
+    }
+    
+    .footer__list-name {
+        font-size: 18px;
+    }
 }
