@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3vh 2.0625rem;
+    gap: 2.6vh 2.0625rem;
 }
 
 /* .header__item {} */
@@ -43,7 +43,8 @@
 
 .offscreen-menu {
     position: fixed;
-    background: #fff;
+    background: var(--general-bg-color);
+    overflow-y: auto;
     inset: 0;
     width: 100%;
     font-size: 1.5rem;
@@ -51,7 +52,8 @@
     opacity: 0;
     z-index: 1000;
     transform: translateY(-300%);
-    overflow: hidden;
+    max-height: 100dvh;
+    /* overflow: hidden; */
 
     height: 100dvh;
 
@@ -68,18 +70,22 @@
     opacity: 1;
 }
 
-.user-nav {
+.nav {
     justify-self: end;
     margin-right: 1.75rem;
     line-height: 1.2;
 }
 
-.user-nav__list {
+.nav__list {
     display: flex;
 }
 
-.user-nav__item:not(:last-child) {
+.nav__item:not(:last-child) {
     margin-right: .8125rem;
+}
+
+.nav__btn {
+    background: transparent;
 }
 
 .hamburger {
@@ -95,7 +101,7 @@
     transform: translate(-50%, 50%);
     top: 50%;
     left: 50%;
-    background: var(--general-text);
+    background: var(--general-color);
     border-radius: 2rem;
     height: .125rem;
     width: 100%;

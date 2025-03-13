@@ -1,13 +1,13 @@
 .footer {
-    background: #f8f9fa;
+    background: var(--accent-color);
     border-top: .0625rem solid #c5c5c5;
+    padding-top: 2.8125rem;
     padding-bottom: 6.25rem;
 }
 
 .footer__wrapper {
     display: flex;
     gap: 4vh 1.75rem;
-    padding-top: 2.8125rem;
     flex-wrap: wrap;
 }
 
@@ -16,11 +16,18 @@
     flex-direction: column;
     max-width: 24.625rem;
     width: 100%;
-    margin-right: auto;
+    /* margin-right: auto; */
 }
 
 /* .footer__california-logo {
 } */
+
+.footer__category {
+    display: flex;
+    flex-direction: column;
+    max-width: 12.3125rem;
+    width: 100%;
+}
 
 .footer__california-logo svg {
     margin-bottom: 1.125rem;
@@ -29,23 +36,21 @@
 .footer__california-text {
     font-family: var(--font-Inter);
     max-width: 17.6875rem;
-    width: 100%;
     line-height: 1.2;
 }
 
-.footer__list {
-    max-width: 12.3125rem;
+.footer__category-list {
     width: 100%;
 }
 
-.footer__list-name {
+.footer__category-name {
     font-family: var(--font-Readex);
     font-size: 1.375rem;
     line-height: 1.25;
     margin-bottom: 1.2325rem;
 }
 
-.footer__list-item {
+.footer__category-list__item {
     font-family: var(--font-Inter);
     font-size: 1.0625rem;
     line-height: 1.27;
@@ -54,6 +59,6 @@
 /* .footer__list-link {
 } */
 
-.footer__list-item:not(:last-child) {
+.footer__category-list__item:not(:last-child) {
     margin-bottom: .92rem;
 }

@@ -1,0 +1,138 @@
+.latest {
+    padding-bottom: 6.25rem;
+    font-family: var(--font-Readex);
+}
+
+.latest__title {
+    font-weight: 400;
+    font-size: 2.625rem;
+    text-align: center;
+    line-height: 1.25;
+    ;
+    margin-bottom: .5rem;
+}
+
+.latest__subtitle {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 39.25rem;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.2;
+    margin-bottom: 3.4375rem;
+}
+
+.latest__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px 1rem;
+    grid-template-areas:
+        "latest__laptops latest__phones latest__tablets"
+        "latest__watch latest__phones latest__tablets"
+        ". . .";
+}
+
+.product {
+    box-shadow: 0 .25rem 2.1875rem 0 rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.product-name {
+    line-height: 128%;
+    font-size: .9375rem;
+    font-family: var(--font-Inter);
+}
+
+.product-text {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.latest__laptops {
+    grid-area: latest__laptops;
+    height: 29.5rem;
+    max-height: 100%;
+}
+
+.latest__laptops-img,
+.latest__watch-img {
+    padding-left: 2.625rem;
+}
+
+
+.latest__laptops-wrap,
+.latest__watch-wrap {
+    text-align: right;
+    padding-right: 2.625rem;
+}
+
+.latest__phones {
+    grid-area: latest__phones;
+}
+
+.latest__tablets {
+    grid-area: latest__tablets;
+}
+
+.latest__watch-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.latest__laptops-text {
+    max-width: 12.5rem;
+    margin-left: auto;
+}
+
+.latest__watch {
+    grid-area: latest__watch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.75rem;
+    margin-bottom: -1.875rem;
+    max-height: 16.875rem;
+    height: 16.875rem;
+}
+
+.latest__watch-img {
+    height: 16.875rem;
+    max-width: unset;
+    width: 100%;
+}
+
+.latest__watch-link {
+    display: flex;
+}
+
+.latest__laptops,
+.latest__watch {
+    width: 39.9375rem;
+    max-width: 100%;
+}
+
+.latest__phones,
+.latest__tablets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 792px;
+    max-height: 100%;
+}
+
+.latest__phones-img {
+    padding-left: 1rem;
+}
+
+.latest__phones-wrap {
+    padding: 2.5rem 1.875rem 0 1.875rem;
+}
+
+
+
+.latest__tablets-wrap {
+    padding: 0 1.875rem 2.5rem 1.875rem;
+}
